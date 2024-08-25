@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #101D42;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    margin-top: -100px;
+    background-color: #101D42;
+    border-bottom: 1px solid #fff3;
+    z-index: 10000;
+}
+
+.contacto {
+    background-color: #ffc73d;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px -3px #7a5822;
+}
+
+.contacto img {
+    width: 30px;
+}
+
+.logo {
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 700;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom: 2px solid #ffc73d;
+}
+
+.ul-list {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+}
+
+.ul-list li {
+    list-style: none;
+}
+
+.li-link {
+    color: #ffffff;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url("./img/background.jpg");
+    background-position: top;
+    position: relative;
+}
+
+.banner-img1 {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.banner-img2 {
+    width: 50.1%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(-1);
+}
+
+
+.banner h1 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 50px #fff;
+}
+
+.sobrenosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.sobrenosotros img {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    width: 90px;
+}
+
+.sobrenosotros-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sobrenosotros p {
+    color: #fff;
+    font-weight: 600;
+}
+
+.tecnologias {
+    width: 85%;
+    height: px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #fff2;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 -10px 0 #0008;
+    flex-direction: column;
+}
+
+.tecno-title {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 1px #000;
+}
+
+.tecno-card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecno-card-container img {
+    width: 80%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.tecno-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios {
+    margin: 30px auto;
+    width: 85%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff2;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 #0009;
+}
+
+.servicios-title {
+    font-weight: 600;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 1px #000;
+}
+
+.servicios-card {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 1px;
+}
+
+.servicios-card p {
+    font-weight: 600;
+    padding: 5px;
+    width: 50%;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.servicios-card li {
+    list-style: none;
+}
+
+.servicios-card img {
+    width: 170px;
+}
+
+.proyectos {
+    height: 500px;
+    width: 85%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 10px 10px 0 #0009;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.proyectos-title {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.proyectos-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.proyectos-card a {
+    background-color: #0009;
+    padding: 10px;
+    color: #fff;
+    z-index: 10;
+}
+
+.proyectos-card:nth-child(1) {
+    background-color: #000;
+}
+
+.card1 {
+    grid-column: 2/4;
+    grid-row: 1/4;
+    position: relative;
+}
+
+.card1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.card2 {
+    position: relative;
+}
+
+.card2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card3 {
+    position: relative;
+}
+
+.card3 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #0009;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .banner {
+        width: 100%;
+        height: 400px;
+    }
+
+    .banner h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .sobrenosotros {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .sobrenosotros img {
+        margin: 0;
+        width: 50px;
+        display: none;
+    }
+
+    .sobrenosotros-div .sobrenosotros-title {
+        font-size: 24px;
+    }
+
+    .sobrenosotros p {
+        font-size: 10px;
+    }
+
+    .tecnologias {
+        height: 100px;
+    }
+
+    .tecnologias img {
+        width: 100%;
+    }
+
+    .tecno-title {
+        font-size: 15px;
+    }
+
+    .tecno-card-container {
+        width: 100%;
+    }
+
+    .tecno-card {
+        width: 100px;
+    }
+
+    .servicios {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .servicios-card {
+        margin-top: 10px;
+    }
+
+    .servicios-title {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .servicios-card img {
+        width: 100px;
+    }
+
+    .proyectos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .proyectos-title {
+        font-size: 24px;
+    }
+
+    .proyectos-card:nth-child(1) {
+        grid-column: 1/5;
+    }
+
+    .card1 {
+        grid-row: 2/4;
+        grid-column: 1/5;
+    }
+
+    .card2 {
+        grid-column: 1/3;
+    }
+
+    .card3 {
+        grid-column: 3/5;
+    }
+
+    .card3 img {
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .banner h1 {
+        text-align: center;
+    }
+
+    .tecnologias {
+        height: 150px;
+    }
+
+    .tecno-card-container img {
+        width: 100%;
+    }
+
+    .servicios-card {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .servicios-card p {
+        width: 100%;
+    }
+
+    .servicios-card img {
+        width: 100px;
+    }
+
+    .servicios-title {
+        font-size: 24px;
+    }
+}
