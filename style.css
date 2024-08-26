@@ -394,6 +394,10 @@ body {
         font-size: 24px;
     }
 
+    .proyectos-card {
+        font-size: 10px;
+    }
+
     .proyectos-card:nth-child(1) {
         grid-column: 1/5;
     }
